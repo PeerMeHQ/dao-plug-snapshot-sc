@@ -6,7 +6,7 @@ Contains a snapshot script for ESDT holders and a pluggable smart contract to fe
 
 Set the current network name in `interaction/snippets.sh`:
 
-````bash
+```bash
 NETWORK_NAME="devnet" # devnet, testnet, mainnet
 ```
 
@@ -16,7 +16,7 @@ Generate admin keys:
 
 ```bash
 . ./interaction/snippets.sh && generateAdminKeys
-````
+```
 
 Deploy the plug smart contract:
 
