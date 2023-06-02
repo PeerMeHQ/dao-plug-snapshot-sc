@@ -7,7 +7,7 @@ PROXY=$(mxpy data load --partition $NETWORK_NAME --key=proxy)
 CHAIN_ID=$(mxpy data load --partition $NETWORK_NAME --key=chain-id)
 
 generateAdminKeys() {
-  # generating admin keys
+  mkdir -p wallets
   cd wallets
   mxpy wallet new --format pem --outfile admin.pem
   admin_pem_address=$(mxpy wallet pem-address admin.pem)
@@ -17,8 +17,8 @@ generateAdminKeys() {
 }
 
 deploy() {
-    # mxpy --verbose contract clean || return
-    # mxpy --verbose contract build || return
+    mxpy --verbose contract clean || return
+    mxpy --verbose contract build || return
 
     mxpy --verbose contract deploy --project . \
         --recall-nonce --gas-limit=25000000 \
