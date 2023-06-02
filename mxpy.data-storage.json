@@ -1,0 +1,17 @@
+{
+  "devnet": {
+    "api": "https://devnet-api.multiversx.com",
+    "proxy": "https://devnet-gateway.multiversx.com",
+    "chain-id": "D"
+  },
+  "testnet": {
+    "api": "https://testnet-api.multiversx.com",
+    "proxy": "https://testnet-gateway.multiversx.com",
+    "chain-id": "T"
+  },
+  "mainnet": {
+    "api": "https://api.multiversx.com",
+    "proxy": "https://gateway.multiversx.com",
+    "chain-id": "1"
+  }
+}
