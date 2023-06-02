@@ -1,9 +1,9 @@
 import path from 'path'
-import { getArg } from './helpers'
 import BigNumber from 'bignumber.js'
 import fs, { readFileSync } from 'fs'
+import { getArg } from './shared/helpers'
 import { UserSigner } from '@multiversx/sdk-wallet'
-import { SnapshotCandidate, SnapshotMember } from './types'
+import { SnapshotCandidate, SnapshotMember } from './shared/types'
 import { ApiNetworkProvider, ProxyNetworkProvider, DefinitionOfFungibleTokenOnNetwork } from '@multiversx/sdk-network-providers'
 import {
   Account,
